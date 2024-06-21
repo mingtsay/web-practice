@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 350px;
+            height: 400px;
+            border: black 1px solid;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .imgBox{
+            position: relative;
+        }
+        .textBox{
+            text-align: center;
+        }
+        .discount{
+            width: 100px;
+            height: 40px;
+            color:white;
+            background-color: tomato;
+            text-align: center;
+            line-height: 40px;
+            position: absolute;
+            bottom: -20px;
+            right: 20px;
+        }
+        .store{
+            width: 100px;
+            height: 40px;
+            color:white;
+            background-color: red;
+            text-align: center;
+            line-height: 40px;
+            position: absolute;
+            top: 10px;
+            left: -10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="imgBox">
+            <img src="https://picsum.photos/id/598/350/200" alt="">
+            <div class="discount">50% off</div>
+        </div>
+        <div class="textBox">
+            <h1>9527</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, porro.</p>
+        </div>
+        
+        <div class="store">店到店</div>
+    </div>
+</body>
+
+</html>

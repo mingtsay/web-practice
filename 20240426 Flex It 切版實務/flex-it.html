@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 微軟正黑體;
+            color:white;
+        }
+        a{
+            color:white;
+            text-decoration: none;
+        }
+        #section01{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(127deg, rgba(2,0,36,0.8295693277310925) 0%, rgba(12,9,121,0.8491771708683473) 71%, rgba(36,5,175,0.8687850140056023) 71%, rgba(0,151,255,0.8939950980392157) 100%), url('https://amincode.com/html/flex-it/assets/images/sections-bg-images/pattern-bg-1.jpg');
+        }
+        #section01 .nav{
+            width: 100%;
+            height: 80px;
+            font-size: 20px;
+            background-color: black;
+        }
+        #section01 .nav .wrap{
+            width: 1200px;
+            margin: auto;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #section01 .nav ul.menu{
+            display: flex;
+            list-style:none;
+            width: 600px;
+            justify-content: space-between;
+        }
+        #section01 .banner{
+            width: 1200px;
+            margin: auto;
+            height: calc(100vh - 80px);
+            /* background-color: #ddd; */
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #section01 .banner .textBox{
+            width: 50%;
+        }
+        #section01 .banner .imgBox{
+            width: 50%;
+            /* background-color: #ddd; */
+        }
+        #section01 .banner .imgBox img{
+            width: 100%;
+            /* height: 100%; */
+        }
+        #section01 .banner .textBox .social{
+            display: flex;
+            gap: 20px;
+            font-size: 20px;
+        }
+        #section01 .banner .textBox h1{
+            font-size: 50px;
+        }
+        #section01 .banner .textBox h1 span{
+            text-decoration: underline wavy 3px #0af;
+            color:#0af;
+        }
+        #section01 .banner .textBox p{
+            font-size: 20px;
+            padding: 15px 0;
+        }
+        .start{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .btn01{
+            width: 150px;
+            height: 50px;
+            background-color: transparent;
+            border: 2px solid #0af;
+            color:#0af;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 2px 20px 2px 20px;
+            transition: .3s;
+        }
+        .btn01:hover{
+            background-color: #0af;
+            color:white;
+        }
+        .play{
+            color:#0af;
+            font-size: 50px;
+        }
+
+        #section02{
+            background-color: #123;
+        }
+        #section02 .wrap{
+            width: 1200px;
+            margin: auto;
+        }
+        #section02 .wrap .upper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #section02 .wrap .upper .textBox{
+            width: 600px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        #section02 .wrap .upper .textBox h2{
+            color:#0af;
+            font-size: 20px;
+        }
+        #section02 .wrap .upper .textBox h1{
+            /* color:#0af; */
+            font-size: 40px;
+        }
+        #section02 .wrap .serviceBox{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            justify-content: space-between;
+            row-gap: 20px;
+        }
+        #section02 .wrap .serviceBox .box{
+            width: 380px;
+            height: 300px;
+            border: 1px solid #0af;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 5px;
+        }
+        #section02 .wrap .serviceBox .box i{
+            font-size: 50px;
+        }
+        #section02 .wrap .serviceBox .box a{
+            color:#0af;
+        }
+    </style>
+</head>
+<body>
+    <!-- 首頁 -->
+    <section id="section01">
+        <div class="nav">
+            <div class="wrap">
+                <div class="logo">
+                    <img src="https://amincode.com/html/flex-it/assets/images/logo/logo-light.png" alt="">
+                </div>
+                <ul class="menu">
+                    <li><a href="#">link01</a></li>
+                    <li><a href="#">link02</a></li>
+                    <li><a href="#">link03</a></li>
+                    <li><a href="#">link04</a></li>
+                    <li><a href="#">link05</a></li>
+                    <li><a href="#">link06</a></li>
+                    <li><a href="#">link07</a></li>
+                </ul>
+                <div class="search">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#"><i class="fa-solid fa-sun"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="textBox">
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+                <h1>Providing The Best Services & IT <span>Solutions</span> </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cumque enim molestiae vitae officiis ex.</p>
+                <div class="start">
+                    <a href="#" class="btn01">Start Now</a> 
+                    <a href="#" class="play"><i class="fa-solid fa-circle-play"></i></a>
+                </div>
+            </div>
+            <div class="imgBox"  data-tilt data-tilt-max="50" >
+                <img src="https://amincode.com/html/flex-it/assets/images/hero/illustration-1.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- 服務區段 -->
+    <section id="section02">
+        <div class="wrap">
+            <div class="upper">
+                <div class="textBox">
+                    <h2>SERVICES</h2>
+                    <h1>Services We Offer</h1>
+                    <p>
+                        Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Omnis
+                        Id Atque Dignissimos Repellat Quae Ullam.
+                    </p>
+                </div>
+                <a href="#" class="btn01">See All Services</a>
+            </div>
+            <div class="serviceBox">
+                <!-- .box*6>img+(h1>lorem2)+(p>lorem10)+a[href=#]{read more} -->
+                <div class="box">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <h1>Lorem, ipsum.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, assumenda?</p>
+                    <a href="#">read more</a>
+                </div>
+                <div class="box">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <h1>Libero, commodi.</h1>
+                    <p>Eligendi, odio? Quas recusandae officiis libero non delectus, esse sed!</p>
+                    <a href="#">read more</a>
+                </div>
+                <div class="box">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <h1>Enim, iusto!</h1>
+                    <p>Excepturi laborum, eveniet nemo molestias a aliquam fugit quia architecto?</p>
+                    <a href="#">read more</a>
+                </div>
+                <div class="box">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <h1>Saepe, iure?</h1>
+                    <p>Nulla quasi in suscipit mollitia officiis voluptates itaque animi quam?</p>
+                    <a href="#">read more</a>
+                </div>
+                <div class="box">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <h1>Sunt, quisquam.</h1>
+                    <p>Iusto impedit doloremque ex officiis suscipit, qui dicta at deserunt?</p>
+                    <a href="#">read more</a>
+                </div>
+                <div class="box">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <h1>Repellendus, doloremque.</h1>
+                    <p>Sint optio deserunt neque ad tempora porro molestias consequatur incidunt.</p>
+                    <a href="#">read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+</body>
+</html>

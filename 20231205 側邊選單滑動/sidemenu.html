@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        ul.menu{
+            width: 150px;
+            position: fixed;
+            top: 50%;
+            /* background-color: aquamarine; */
+            transform: translateY(-50%);
+            list-style: none;
+            z-index: 1;
+        }
+        ul.menu li{
+            margin-bottom: 20px;
+            /* background-color: blueviolet; */
+        }
+        ul.menu li a{
+            display: block;
+            width: 100px;
+            height: 50px;
+            background-color: #0006;
+            color:white;
+            text-decoration: none;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 0 10px 10px 0;
+            transition: .3s;
+        }
+        ul.menu li a:hover{
+            width: 120px;
+            letter-spacing: 3px;
+        }
+        section{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+        #tomato{
+            background-color: tomato;
+        }
+        #brown{
+            background-color: brown;
+        }
+        #black{
+            background-color: #222;
+        }
+        #green{
+            background-color: green;
+        }
+        #blue{
+            background-color: blue;
+        }
+        section h1{
+            font-size: 150px;
+            color:white;
+            text-transform: uppercase;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <!-- ul.menu>li*5>a[href=#] -->
+    <ul class="menu">
+        <li><a href="#tomato">tomato</a></li>
+        <li><a href="#brown">brown</a></li>
+        <li><a href="#black">black</a></li>
+        <li><a href="#green">green</a></li>
+        <li><a href="#blue">blue</a></li>
+    </ul>
+    <section id="tomato">
+        <h1>tomato</h1>
+    </section>
+    <section id="brown">
+        <h1>brown</h1>
+    </section>
+    <section id="black">
+        <h1>black</h1>
+    </section>
+    <section id="green">
+        <h1>green</h1>
+    </section>
+    <section id="blue">
+        <h1>blue</h1>
+    </section>
+</body>
+</html>

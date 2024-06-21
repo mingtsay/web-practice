@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .banner{
+            width: 100%;
+            height: 400px;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,0.6278886554621849) 0%, rgba(4,77,36,0.6867121848739496) 17%, rgba(57,7,104,0.6615021008403361) 40%, rgba(6,170,44,0.5970763305322129) 59%, rgba(39,4,195,0.6026785714285714) 71%, rgba(0,212,255,0.5186449579831933) 100%), url("https://picsum.photos/2000/400?random=1");
+            /* padding: 100px 250px; */
+            color:white;
+            background-position: center;
+            margin-top: 56px;
+        }
+        img{
+          width: 100%;
+        }
+        .box{
+          border: 2px solid transparent;
+          height: 100%;
+          transition: .3s;
+        }
+        .box:hover{
+          border-color: #aaa;
+          cursor: pointer;
+          background-color: #eee;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 頁首選單 -->
+    <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Wonderwhat Inc.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">關於我</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">公司宗旨</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">服務理念</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  產品列表
+                </a>
+                <ul class="dropdown-menu"  data-bs-theme="light">
+                  <li><a class="dropdown-item" href="#">長褲</a></li>
+                  <li><a class="dropdown-item" href="#">短褲</a></li>
+                  <li><a class="dropdown-item" href="#">長袖</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">拖鞋</a></li>
+                  <li><a class="dropdown-item" href="#">雨鞋</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  網站地圖
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">地圖1</a></li>
+                  <li><a class="dropdown-item" href="#">地圖2</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-user-tie"></i> Wonderwhat</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-earth-americas"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">中文</a></li>
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                  </ul>
+                </li>
+                
+              </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-danger" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <!-- 橫幅看板 -->
+    <!-- .banner>h1{wonderwhat}+(p>lorem30)+a[href=#]{Read More} -->
+    <div class="banner p-5">
+        <div class="container p-5">
+          <h1 class="display-1">wonderwhat</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo inventore nam dignissimos. Totam modi inventore ad rem rerum magnam tempora saepe obcaecati unde a quos architecto, excepturi autem asperiores itaque.</p>
+          <a href="#" class="btn btn-danger">Read More</a>
+        </div>
+    </div>
+    <!-- 麵包屑導覽列 -->
+    <nav aria-label="breadcrumb" class="container">
+      <ol class="breadcrumb my-2">
+        <li class="breadcrumb-item"><a href="#">首頁</a></li>
+        <li class="breadcrumb-item"><a href="#">關於我們</a></li>
+        <li class="breadcrumb-item"><a href="#">老董的話</a></li>
+        <li class="breadcrumb-item active" aria-current="page">宣示</li>
+      </ol>
+    </nav>
+    <!-- 內容區 -->
+    <div class="container content">
+      <div class="row">
+        <!-- 左方選單 -->
+          <div class="col-12 col-md-3 col-xl-2 mb-2">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action">連回致理</a>
+              <a href="#" class="list-group-item list-group-item-action active">致理校徽</a>
+              <a href="#" class="list-group-item list-group-item-action">致理校歌</a>
+              <a href="#" class="list-group-item list-group-item-action">交通資訊</a>
+              <a href="#" class="list-group-item list-group-item-action">聯絡我們</a>
+            </div>
+          </div>
+        <!-- 產品區 -->
+          <div class="col-12 col-md-9 col-xl-10">
+            <div class="row row-gap-2">
+            <!-- .col-12.col-sm-6.col-md-4.col-lg-3.col-xl-2.col-xxl-1.box*24{$$} -->
+            <!-- .col-12.col-md-4.col-xl-3*12>img+h2{item$$}+p>lorem10 -->
+            <div class="col-12 col-md-4 col-xl-3">
+                <div class="box">
+                    <img src="https://picsum.photos/350/200?random=1" alt="">
+                    <div class="textBox p-2">
+                        <h2>item01</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, culpa!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+                <div class="box">
+                    <img src="https://picsum.photos/350/200?random=2" alt="">
+                    <div class="textBox p-2">
+                        <h2>item02</h2>
+                        <p>Fuga, mollitia. Magni praesentium eos veritatis reprehenderit aspernatur nisi maxime?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+                <div class="box">
+                    <img src="https://picsum.photos/350/200?random=3" alt="">
+                    <div class="textBox p-2">
+                        <h2>item03</h2>
+                        <p>Incidunt cupiditate harum iure. Eaque deserunt aperiam et exercitationem possimus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+                <div class="box">
+                    <img src="https://picsum.photos/350/200?random=4" alt="">
+                    <div class="textBox p-2">
+                        <h2>item04</h2>
+                        <p>Similique fuga debitis repellat porro eligendi aut eum? Incidunt, quo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+                <div class="box">
+                    <img src="https://picsum.photos/350/200?random=5" alt="">
+                    <div class="textBox p-2">
+                        <h2>item05</h2>
+                        <p>Sapiente consequuntur sit harum mollitia porro molestias molestiae quis a.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+                <div class="box">
+                    <img src="https://picsum.photos/350/200?random=6" alt="">
+                    <div class="textBox p-2">
+                        <h2>item06</h2>
+                        <p>Molestias iure hic quos saepe molestiae non quaerat sequi excepturi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+                <div class="box">
+                    <img src="https://picsum.photos/350/200?random=7" alt="">
+                    <div class="textBox p-2">
+                        <h2>item07</h2>
+                        <p>Animi voluptatibus eius vel consectetur molestiae libero obcaecati laboriosam nihil?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+                <div class="box">
+                    <img src="https://picsum.photos/350/200?random=8" alt="">
+                    <div class="textBox p-2">
+                        <h2>item08</h2>
+                        <p>Voluptate delectus obcaecati quasi perspiciatis qui nihil, vel pariatur error.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+                <div class="box">
+                    <img src="https://picsum.photos/350/200?random=9" alt="">
+                    <div class="textBox p-2">
+                        <h2>item09</h2>
+                        <p>Itaque neque praesentium debitis ducimus impedit dolor, voluptas ratione quibusdam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+                <div class="box">
+                    <img src="https://picsum.photos/350/200?random=10" alt="">
+                    <div class="textBox p-2">
+                        <h2>item10</h2>
+                        <p>Rem praesentium porro dicta ducimus dolorem eligendi obcaecati ratione unde.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+                <div class="box">
+                    <img src="https://picsum.photos/350/200?random=11" alt="">
+                    <div class="textBox p-2">
+                        <h2>item11</h2>
+                        <p>Vel, molestiae voluptas. Tempora ipsam illum cumque nobis quae! Velit!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+                <div class="box">
+                    <img src="https://picsum.photos/350/200?random=12" alt="">
+                    <div class="textBox p-2">
+                        <h2>item12</h2>
+                        <p>Accusantium suscipit ipsum odit eveniet, nihil rerum reprehenderit aspernatur nam!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+          </div>
+      </div>
+    </div>
+    <!-- 頁偉區 -->
+    <div class="footer text-center bg-dark text-white p-4 mt-3">
+      <h5>Wonderwhat Inc.</h5>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, quisquam.</p>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

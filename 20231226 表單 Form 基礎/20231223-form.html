@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            margin: 30px;
+        }
+
+        input {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        ::placeholder {
+            color: #ddd;
+        }
+        fieldset{
+            width: 90%;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            border: 10px double black;
+        }
+        legend{
+            padding: 10px;
+            background-color: black;
+            color:white;
+            border-radius: 2px;
+        }
+        input[type=submit],input[type=reset]{
+            min-width: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="reg.php" method="get">
+        <fieldset>
+            <legend>註冊表單</legend>
+            <!-- input:text -->
+            <label for="name">姓名</label> <input type="text" name="name" id="name" placeholder="請輸入姓名" required autofocus
+                maxlength="50" minlength="2"><br>
+            <label>密碼 <input type="password" name="pass" id="pass" placeholder="您的密碼" required></label><br>
+            生日 <input type="date" name="birth" id="birth" value="2000-01-01"><br>
+            email <input type="email" name="email" id="email"><br>
+            幸運色彩 <input type="color" name="color" id="color" value="#2279F6"><br>
+            幸運號碼 <input type="number" name="number" id="number" min="0" max="120"><br>
+            <input type="hidden" name="level" value="basic">
+            <input type="submit" value="註冊"><input type="reset" value="清除資料">
+        </fieldset>
+    </form>
+</body>
+
+</html>
